@@ -1,0 +1,9 @@
+@import "var";
+
+.firstDiv{
+	width: 100%;
+	height: 450px;
+	box-sizing: border-box;
+	padding: 20px;
+	background: blue;
+}

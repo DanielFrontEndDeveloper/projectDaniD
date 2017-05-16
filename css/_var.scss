@@ -1,0 +1,57 @@
+//flat colors
+$yellow: #F89406;
+$fontcolor: #EEEEEE;
+$hover: #f1c40f;
+
+
+$small-up: 20em;
+$small-only: 47.9375em;
+//480px
+$small-wide-up: 30em;
+$small-wide-only: 47.9375em;
+//768px
+$medium-up: 48em;
+//1024px
+$large-up: 64em;
+
+
+//MEDIA QUERIES
+
+@mixin small-only {
+  @media (min-width: $small-up) and (max-width: $small-only) {
+	@content;
+  }
+}
+
+@mixin small-wide-only {
+  @media (min-width: $small-wide-up) and (max-width: $small-wide-only) {
+	@content;
+
+  }
+}
+
+@mixin medium-up {
+  @media (min-width: #{$medium-up}) {
+	@content;
+  }
+}
+
+
+@mixin large-up {
+  @media (min-width: #{$large-up}) {
+	@content;
+  }
+}
+
+
+@mixin rotate-mobile {
+  @media (min-height: 340px) and (max-height: 548px) {
+    @content
+  }
+}
+
+@mixin rotate-mobile-smaller {
+  @media (min-height: 320px) and (max-height: 339px){
+    @content
+  }
+}

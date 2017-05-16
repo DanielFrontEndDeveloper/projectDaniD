@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dani D</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimun-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript">
+		function frontend(){
+			document.getElementById("contentFront").style.display = "block";
+			document.getElementById("contentUX").style.display = "none";
+		}
+
+		function uxdesigner(){
+			document.getElementById("contentFront").style.display = "none";
+			document.getElementById("contentUX").style.display = "block";
+		}
+
+		function menu(){
+			document.getElementById("contact").style.display = "block";
+			document.getElementById("name").style.display = "none";
+		}
+
+		function menu1(){
+			document.getElementById("contact").style.display = "none";
+			document.getElementById("name").style.display = "block";
+		}
+	</script>
+</head>
+<body>
+	<div class="page">
+		<div class="nav">
+			<h1 id="name"><i class="fa fa-bars" aria-hidden="true" onclick="menu();"></i>Dani D</h1>
+			<h1 id="contact" style="display: none;"><i class="fa fa-bars" aria-hidden="true" onclick="menu1();"></i><a href="#footerContact">Contact</a></h1>
+		</div>
+		<div class="firstDiv">
+			<a class="front-end" onclick="frontend();">
+				<div style="text-align: center;">
+					<h3>Front-End</h3>
+					<img src="https://s30.postimg.org/nr3gpr1rl/html.png">
+				</div>
+			</a>
+			<a class="uxdesign" onclick="uxdesigner();">
+				<div style="text-align: center;">
+					<h3>UX Designer</h3>
+					<img src="https://s11.postimg.org/6s5cernkz/image.png">
+				</div>
+			</a>
+			<div id="contentFront">
+				<h3>I have experience:<br>(Front-End)</h3>
+				<p>This page was created using responsive design with Html, Css, Sass, Javascript or Bootstrap if it's necesary.<p>Of course mobile first.</p></p>
+			</div>
+			<div id="contentUX">
+				<h3>I have experience:<br>(UX Designer)</h3>
+				<p>Changing desktop design into great mobile design. Knowledge in Photoshop, Gimp or Inkscape<p>Of course creative ideas.</p></p>
+			</div>
+		</div>
+		<div class="secondDiv">
+			<img class="imgBoy" src="https://s30.postimg.org/hfega9b7l/worker.png">
+			<img class="imgBoy-mobile" src="https://s2.postimg.org/bkttt6nhl/worker.png">
+			<div class="textWorkerH2">
+				<h2>I am a hard worker.</h2>
+				<div class="textWorkerH3">
+					<h3>Creating good atmosphere.</h3>
+					<h3>Interesing for the project.</h3>
+					<h3>Motivated worker.</h3>
+					<h3>Creative person.</h3>
+				</div>
+			</div>
+		</div>
+		<div class="thirdDiv">
+			<div class="gitHub">
+				<h3>GitHub</h3>
+				<img src="https://s4.postimg.org/j1kana68d/githubicon.png">
+			</div>
+			<div class="contentGitHub">
+				<h3>I have experience:<br>(GitHub)</h3>
+				<p>I like to pull interesting projects and push them turned into great projects.<p>Using the console or the program.</p></p>
+			</div>
+			
+		</div>
+		<div class="footer" id="footerContact">		
+			<div class="iconHesitate">
+				<p>Don't Hesitate to Contact me.</p>
+			</div>
+			<img src="https://s10.postimg.org/85o2m8knd/hesitate.png">
+			<p class="curriculum">More imformation in my Curriculum Vitae.</p>
+		</div>
+	</div>
+		
+
+</body>
+</html>

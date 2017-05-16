@@ -1,0 +1,289 @@
+@import "var";
+
+.page{
+
+	.firstDiv{
+		width: 100%;
+		height: 450px;
+		position: relative;
+		box-sizing: border-box;
+		padding: 34px 0;
+		background-image: url("https://s17.postimg.org/k0qxcnlmn/image.jpg");
+		background-size: auto;
+		text-align: center;
+
+		.front-end{
+			text-align: left;
+			width: 150px;
+			height: auto;
+			display: inline-block;
+			margin-right: 10px;
+			background: $yellow;
+			border-radius: 5px;
+			box-sizing: border-box;
+			padding: 15px;
+			cursor: pointer;
+
+			@include small-wide-only{
+				min-width: 200px;
+				margin-right: 50px;
+			}
+
+			@include medium-up{
+				min-width: 250px;
+				margin-right: 50px;
+			}
+
+			@include large-up{
+				min-width: 350px;
+				margin-right: 50px;
+			}
+
+			h3{
+				margin: 5px 0 10px 0;
+			}
+
+			img{
+			width: 80px;
+			height: 80px;
+			border-radius: 20px;
+			}
+
+			p{
+			text-align: left;
+			}
+		}
+
+		.front-end:hover{
+			background-color: $hover;
+			color: $fontcolor;
+		}
+
+		.uxdesign{
+			text-align: right;
+			width: 150px;
+			height: auto;
+			display: inline-block;
+			background: $yellow;
+			border-radius: 5px;
+			box-sizing: border-box;
+			padding: 15px;
+			cursor: pointer;
+
+			@include small-wide-only{
+				min-width: 200px;
+			}
+
+			@include medium-up{
+				min-width: 250px;
+			}
+
+			@include large-up{
+				min-width: 350px;
+			}
+
+			h3{
+				margin: 5px 0 10px 0;
+			}
+
+			img{
+			width: 80px;
+			height: 80px;
+			border-radius: 0;
+			}
+
+			p{
+			text-align: left;
+			}	
+		}
+
+		.uxdesign:hover{
+			background-color: $hover;
+			color: $fontcolor;
+		}
+
+		#contentFront{
+			width: 315px;
+			min-height: 200px;
+			margin: auto;
+			margin-top: 30px;
+			background: $yellow;
+			border-radius: 5px;
+			box-sizing: border-box;
+			padding: 2px 50px;
+
+			@include small-wide-only{
+				min-width: 455px;
+				padding: 5px 50px;
+			}
+
+			@include medium-up{
+				min-width: 555px;
+				padding: 10px 70px;
+			}
+
+			@include large-up{
+				min-width: 755px;
+				padding: 10px 70px;
+			}
+		}
+
+		#contentUX{
+			width: 315px;
+			min-height: 200px;
+			margin: auto;
+			margin-top: 30px;
+			background: $yellow;
+			display: none;
+			border-radius: 5px;
+			box-sizing: border-box;
+			padding: 2px 50px;
+
+			@include small-wide-only{
+				min-width: 455px;
+				padding: 5px 50px;
+			}
+
+			@include medium-up{
+				min-width: 555px;
+				padding: 10px 70px;
+			}
+
+			@include large-up{
+				min-width: 755px;
+				padding: 10px 70px;
+			}
+		}
+	}
+
+	.secondDiv{
+		width: 100%;
+		height: 450px;
+		position: relative;
+		box-sizing: border-box;
+		padding: 34px 10px;
+		background: $yellow;
+		text-align: center;
+
+		.imgBoy{
+			display: none;
+
+			@include medium-up{
+				display: inline-block;
+				margin: 45px 0 0 0;
+			}
+
+			@include large-up{
+				margin: 45px 35px 0 0;
+			}
+		}
+
+		.imgBoy-mobile{
+			display: block;
+			margin: auto;
+			margin-top: 5px;
+
+			@include medium-up{
+				display: none;
+			}
+		}
+
+		.textWorkerH2{
+			text-align: left;
+			display: inline-block;
+    		vertical-align: top;
+			margin: 15px 0 0 0;
+
+			@include medium-up{
+				margin: 55px 0 0 0;
+			}
+
+			.textWorkerH3{
+				margin: 0;
+
+				@include medium-up{
+					margin: 15px 5px 0 10px;
+				}
+				
+				@include large-up{
+					margin: 15px 0 0 15px;
+				}
+			}
+		}
+	}
+
+	.thirdDiv{
+		width: 100%;
+		height: 450px;
+		position: relative;
+		background-image: url("https://s12.postimg.org/p6dy8yc0d/github.png");
+		background-size: contain;
+		box-sizing: border-box;
+		padding: 34px 0;
+		text-align: center;
+
+		.gitHub{
+			text-align: center;
+			width: 150px;
+			height: auto;
+			display: inline-block;
+			background: $yellow;
+			border-radius: 5px;
+			box-sizing: border-box;
+			padding: 15px;
+
+			@include small-wide-only{
+				min-width: 200px;
+			}
+
+			@include medium-up{
+				min-width: 250px;
+			}
+
+			@include large-up{
+				min-width: 350px;
+			}
+
+			h3{
+				margin: 5px 0 10px 0;
+			}
+
+			img{
+			width: 80px;
+			height: 80px;
+			border-radius: 0;
+			}
+
+			p{
+			text-align: left;
+			}	
+
+		}
+
+		.contentGitHub{
+			width: 315px;
+			min-height: 200px;
+			margin: auto;
+			margin-top: 30px;
+			background: $yellow;
+			border-radius: 5px;
+			box-sizing: border-box;
+			padding: 2px 50px;
+
+			@include small-wide-only{
+				min-width: 455px;
+				padding: 5px 50px;
+			}
+
+			@include medium-up{
+				min-width: 555px;
+				padding: 10px 70px;
+			}
+
+			@include large-up{
+				min-width: 755px;
+				padding: 10px 70px;
+			}
+		}
+	}
+}	
